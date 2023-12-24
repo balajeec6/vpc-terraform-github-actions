@@ -7,3 +7,9 @@ variable "subnet_cidr" {
     description = "Subnet CIDRS"
     type = list(string)
 }
+
+variable "subnet_names" {
+    description = "Subnet names"
+    type = list(string)
+    default = [ "Publicsubnet1", "Publicsubnet2" ]
+}
